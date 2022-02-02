@@ -1,0 +1,217 @@
+:root {
+  --primary-color: hsl(222, 26%, 31%);
+}
+
+* {
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  background: var(--primary-color);
+}
+
+body {
+  background: var(--primary-color);
+}
+
+#contenedor {
+  width: 40%;
+  margin: auto auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  background: var(--primary-color);
+}
+
+#titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  width: 80%;
+  margin: auto;
+  color: white;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#titulo h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#titulo span {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#titulo #options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#titulo #options span {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#titulo #selectTema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 5px;
+  background-color: #232c43;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#titulo #selectTema .form-check-inline {
+  width: auto;
+  height: auto;
+  margin-right: 0;
+}
+
+#titulo #selectTema .form-check {
+  min-height: 0;
+}
+
+#titulo #selectTema .form-check-input {
+  width: 14px;
+  height: 14px;
+}
+
+#titulo #selectTema .form-check-input:checked {
+  background-color: #d03f2f !important;
+  color: #d03f2f !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #d03f2f;
+}
+
+#titulo #selectTema .form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #d03f2f;
+}
+
+#inputTexto {
+  width: 80%;
+  margin: 5% 10% 5% 10%;
+  height: 90px;
+  border-radius: 10px;
+  background-color: #182034;
+  border-color: transparent;
+  color: white;
+  text-align: end;
+  font-size: 30px;
+}
+
+#contenido {
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  padding: 25px 0 25px 25px;
+  background-color: #232c43;
+}
+
+#contenido form {
+  width: auto;
+  margin: auto;
+}
+
+#contenido form #group-one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#contenido form #group-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 43.5% 43.5%;
+      grid-template-columns: 43.5% 43.5%;
+  gap: 15px;
+}
+
+#contenido form button {
+  width: auto;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #444b5a;
+  border-bottom: 3px solid #b4a597;
+}
+
+#contenido form #limpiar {
+  background-color: #637097;
+  color: white;
+  border-bottom: 3px solid #404e72;
+}
+
+#contenido form #borrar {
+  background-color: #637097;
+  color: white;
+  border-bottom: 3px solid #404e72;
+}
+
+#contenido form #resultado {
+  background-color: #d03f2f;
+  color: white;
+  border-bottom: 3px solid #93261a;
+}
+
+#contenido form .botonDel {
+  font-size: 15px;
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #contenedor {
+    width: auto;
+    height: 100% !important;
+  }
+  #contenedor form button {
+    height: 55px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
